@@ -1,0 +1,77 @@
+
+*{
+	font: 18px verdana, arial;
+
+}
+
+body{
+	display:box;
+	box-pack:center;
+	text-align:center;
+	width:100%;
+	background-attachment:fixed;
+	background-image:url(images/pure5.png);
+	background-position:center;
+	background-size:cover;
+	color:black;
+}
+
+#main{
+  margin: 0 auto;
+  margin-top:50px;
+  text-align:center;
+  background:#E9FFF3;
+  width:50%;
+  padding:50px;
+  border-radius:20px;
+}
+
+.bmi{
+	text-align:center;
+	width:130px;
+	border-radius:5px;
+	border-style:groove;
+}
+
+.bmi:focus{
+	content:none;
+	outline-color:#37B482
+}
+
+#calc{
+	padding:10px;
+	margin:20px;
+}
+
+@media screen and (max-width: 500px) {
+	h1{
+	font-size:28px;
+  }
+  
+  h2{
+	  font-size:18px;
+  }
+	
+	h3{
+	margin-top:20px;
+	font-size:16px;
+	display:inline-block;
+  }
+
+  
+  p{
+	  font-size:16px;
+	  margin-left:0;
+	  margin-right:0;
+	  width:100%;
+  }
+  
+
+#main{
+	width:100%;
+	padding:0px;
+	padding-top:10px;
+}
+
+	
+}

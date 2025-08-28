@@ -1,0 +1,68 @@
+
+*{
+	font: 18px verdana, arial;
+
+}
+
+body{
+	text-align:center;
+	width:100%;
+	background-attachment:fixed;
+	background-image:url(images/pure5.png);
+	background-position:center;
+	background-size:cover;
+	color:white;
+}
+
+#head2{
+	margin:75px 75px 100px;
+	text-shadow: rgb(50,50,50)2px 6px 4px;
+}
+
+#main{
+  margin: 0 auto;
+  text-align:center;
+}
+
+.video{
+	box-shadow: rgb(50,50,50) 50px 35px 40px;
+
+}
+
+p{
+	margin-top:70px;
+	margin-bottom:70px;
+	margin-left:auto;
+	margin-right:auto;
+	width:80%;
+	font-size:20px;
+	text-shadow: rgb(50,50,50)2px 6px 4px;
+}
+
+@media screen and (max-width: 500px) {
+	
+  h2{
+	  font-size:18px;
+  }
+	
+	#head3{
+	margin-top:20px;
+	font-family:'cinzel decorative';
+	font-size:16px;
+	display:inline-block;
+  }
+
+  h3{
+    font-family:noto serif , helvetica, arial;
+    font-size:18px;
+  }
+
+  
+  p{
+	  font-size:16px;
+	  margin-left:0;
+	  margin-right:0;
+	  width:100%;
+  }
+  
+}

@@ -1,0 +1,79 @@
+
+*{
+	font: 18px verdana, arial;
+
+}
+
+body{
+	display:box;
+	box-pack:center;
+	text-align:center;
+	width:100%;
+	background-attachment:fixed;
+	background-image:url(images/wallpaperflare.com_book1.jpg);
+	background-position:center;
+	background-size:cover;
+	color:black;
+}
+
+#main{
+	margin: auto;
+	margin-top:50px;
+	width:95%;
+	background: rgba(204, 250, 205,.8);
+	border-radius:10px;
+}
+
+.image{
+	width:100%;
+	max-height:100vh;
+	box-shadow: rgb(50,50,50) 25px 25px 40px;
+	border-radius:10px;
+	margin-bottom:50px;
+}
+
+
+@media screen and (max-width: 500px) {
+	h1{
+	font-size:28px;
+  }
+  
+  h2{
+	  font-size:18px;
+  }
+	
+	h3{
+	margin-top:20px;
+	font-family:'cinzel decorative';
+	font-size:16px;
+	display:inline-block;
+  }
+
+  
+  .navbar-custom{
+	opacity:0.9;
+	top:-75px;
+}
+
+.stick {
+  top: 0px;
+}
+  
+#search{
+	position:relative;
+	min-width:280px;
+	top:75px;
+}
+
+#up{
+	font-size:15px;
+	bottom:45px;
+	right:15px;
+	padding:5px 8px 5px;
+}
+
+.dropdown-menu li{
+	background-color:#2B8964;
+}
+
+}

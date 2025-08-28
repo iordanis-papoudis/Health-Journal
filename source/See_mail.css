@@ -1,0 +1,63 @@
+
+*{
+	font: 18px verdana, arial;
+
+}
+
+body{
+	display:box;
+	box-pack:center;
+	text-align:center;
+	width:100%;
+	background-attachment:fixed;
+	background-image:url(images/pure5.png);
+	background-position:center;
+	background-size:cover;
+	color:black;
+}
+
+
+h2{
+	font-family:'cinzel decorative';
+}
+
+.modal-header, h4, .close {
+    background-color: #5cb85c;
+    color:white !important;
+    text-align: center;
+    font-size: 30px;
+  }
+  .modal-footer {
+    background-color: #f9f9f9;
+  }
+#main{
+  margin: 0 auto;
+  margin-top:50px;
+  text-align:center;
+  background-color: white;
+  width: 60%;
+  padding: 50px;
+  border-radius: 20px;
+  background-color:#E9FFF3;
+  }
+
+
+@media screen and (max-width: 500px) {
+	h1{
+	font-size:28px;
+  }
+  
+  h2{
+	  font-size:18px;
+  }
+	
+
+#main{
+	width:100%;
+	padding:0px;
+}
+
+.container{
+    padding:1px;
+}
+}

@@ -1,0 +1,357 @@
+#main{
+    margin: 0;
+	margin-top:50px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: .88rem;
+    font-weight: 400;
+    color: gray;
+    text-align: left;
+	
+}
+#title{
+    color: white;
+    padding-bottom: 40px;
+    text-align:center;
+}
+#replies, #date{
+    text-align:center;
+}
+
+body{
+    background: linear-gradient(to bottom right, #5ECEBA 50%, #3355FF 100%);
+}
+
+body a{
+    color: #E91E63;
+    text-decoration: none;
+    background-color: transparent;
+}
+.topic{
+    text-align: left;
+    font-weight: bold;
+}
+
+.card{
+    width:100%;
+    padding:10px;
+    margin-top:30px;
+    color:grey;
+}
+
+img{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    margin-right:20px;
+    box-shadow: 0 0 8px 3px #29C3C5;
+}
+
+.username:hover{
+    text-decoration-line:none;
+    color:#37B482;
+}
+
+.username{
+    color:#0066CC;
+}
+
+#sort_text{
+    font-size:20px;
+    margin-top:8px;
+    margin-right:10px;
+}
+
+.sort_drop{
+	background-color:#0066CC;
+	text-align:center;
+	width:200px;
+	padding:0px;
+}
+
+.sort_btn{
+    color:white;
+    width:100%;
+    text-decoration:none;
+}
+
+.sort_btn:hover{
+    color:black;
+    background:#00AA;
+}
+
+.sort_btn{
+    background:transparent;
+    border:none;
+    width:100%;
+    padding:5px;
+}
+
+.date_elmnt{
+    display:block;
+}
+
+.post_title{
+    margin-left:50px;
+    margin-bottom:20px;
+}
+
+.float{
+  z-index: 99;
+	position:fixed;
+	width:80px;
+	height:80px;
+	bottom:120px;
+	right:30px;
+	background-color:#0C9;
+  border-radius: 50px;
+	color:#FFF;
+	text-align:center;
+  outline: none;
+  background-position: center;
+  font-size:25px;
+}
+
+button.float:focus{
+  outline: none;
+  border: 0;
+}
+button.float:hover{
+  transition: 0.4s;
+	background: #2B8964 radial-gradient(circle, transparent 1%, #2B8964 1%) center/15000%;
+	cursor:pointer;
+  outline: none;
+  border: 0;
+}
+button.float:enabled{
+  outline: none;
+  border: 0;
+}
+button.float:active{
+	background-color: #0C9;
+	background-size: 100%;
+	transition: background 0s;
+  outline: none;
+  border: 0;
+}
+.my-float{
+	margin-top:25px;
+}
+
+.modal {
+    display: none;
+    position: fixed; 
+    z-index: 999;
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+  .modal-content {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    border-radius: 15px;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-header {
+    padding: 2px 16px;
+    background-color: #16a085;
+    color: white;
+  }
+  
+  .modal-body {padding: 2px 16px;}
+  
+  .modal-footer {
+    padding: 2px 16px;
+    background-color: #16a085;
+    color: white;
+  }
+  .form-group{
+    padding-top: 10px;
+  }
+  .text{
+    width: 90%;
+    align-items: left;
+    display: inline-block;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    background-color: #F1FAFC;
+    height: 37px;
+    border: none;
+    color: black;
+    border-bottom: 1px solid #AAA;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    transition: 0.2s ease;
+  }
+  .content{
+    width: 90%;
+    background-color: #F1FAFC;
+    height: 300px;
+    border: none;
+    color:black;
+    border-bottom: 1px solid #AAA;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    transition: 0.2s ease;
+    resize: none;
+  }
+  .form{
+    color:black;
+  }
+  .text:focus .content:focus{
+    border-bottom: 2px solid #16a085;
+    color: #16a085;
+    transition: 0.2s ease;
+  }
+  #text-area{
+    padding-bottom: 7px;
+  }
+.label-container{
+	margin-top:50px;
+	position:fixed;
+	bottom:140px;
+	right:120px;
+	display:table;
+	visibility: hidden;
+	z-index:1;
+}
+
+.label-text{
+	color:#FFF;
+	background: #16a085;
+	display:table-cell;
+	vertical-align:middle;
+	padding:10px;
+	border-radius:3px;
+}
+
+.label-arrow{
+	display:table-cell;
+	vertical-align:middle;
+	color: black;
+	opacity:0.5;
+}
+
+
+a.float + div.label-container {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s ease;
+}
+
+button.float:hover + div.label-container{
+  visibility: visible;
+  opacity: 1;
+}
+.btnSubmit{
+  font-weight: 600;
+  width: 45%;
+  color: white;
+  background-color: #16a085; 
+  border: none;
+  border-radius: 12px;
+  padding:2%;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+@media screen and (max-width: 500px) {
+  .btnSubmit{
+    width: fit-content;
+  }
+  *{
+    font-size: 16px;
+  }
+  .float{
+    width:50px;
+    height:50px;
+	bottom:105px;
+	right:5px;
+	font-size:20px;
+  }
+  .label-text{
+    font-size:12px;
+  }
+  .label-container{
+    right:60px;
+    bottom:115px;
+  }
+  #title{
+    text-align: center;
+}
+
+.modal-content{
+	width:100%;
+}
+
+#replies, #date{
+    display:inline-block;
+    font-size:14px;
+}
+
+
+#date{
+    position:absolute;
+    bottom:0;
+}
+
+.date_elmnt{
+    display:inline-block;
+}
+
+img{
+    height:30px;
+    width:30px;
+
+}
+
+.post_title{
+    margin-left:0px;
+    margin-bottom:10px;
+}
+
+}
+
+

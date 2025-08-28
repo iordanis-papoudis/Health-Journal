@@ -1,0 +1,160 @@
+
+*{
+	font: 18px verdana, arial;
+
+}
+
+body{
+	text-align:center;
+	width:100%;
+	background-attachment:fixed;
+	background: linear-gradient(to bottom right, #5ECEBA 60%, #3355FF 100%);
+	background-position:center;
+	background-size:cover;
+	color:black;
+}
+
+#main{
+  margin: 0 auto;
+  margin-top:50px;
+  text-align:left;
+  width:85%;
+  padding:30px;
+}
+
+#topic{
+	width:100%;
+	margin:0px;
+	border-radius:5px;
+	padding-left:10px;
+	word-wrap: break-word;
+}
+
+.post{
+	background-color:#A7E5DA;
+    margin-bottom:50px;
+}
+
+.post, .reply{
+    padding:50px;
+    border:1px solid #7E9E99;
+    border-radius:4px;
+    position:relative;
+}
+
+.reply{
+	margin-bottom:30px;
+	margin-top:30px;
+	background-color:#D3EDE9;
+}
+
+.reply_box{
+    margin: 0 auto;
+    margin-top:50px;
+    text-align:left;
+    width:100%;
+    padding:10px;
+    background-color:rgb(227, 245, 242,0.5);
+    border-radius:10px;
+    margin-bottom:80px;
+}
+
+#context{
+    float: left;
+    width: 90%;
+    text-align: left;
+    color: black;
+    float:left;
+    margin-left:50px;
+    word-wrap: break-word;
+}
+
+.username{
+    display:inline-block;
+}
+
+.username:hover{
+    text-decoration-line:none;
+    color:#37B482;
+}
+
+#comment-area{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #A7E5DA;
+    border-radius: 15px;
+
+}
+#comment{
+    padding-left: 15px;
+    height:80px;
+    width:100%;
+    color:black;
+    border-radius: 7px;
+}
+
+img{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    margin-right:20px;
+    box-shadow: 0 0 8px 3px #29C3C5;
+}
+
+.date{
+    display:inline-block;
+    margin-top:11px;
+}
+
+#btn{
+    padding: 15px;
+    width:100%;
+    border-radius: 15px;
+}
+
+@media screen and (max-width: 500px) {
+
+    #main{
+        width:91%;
+        padding:0px;
+    }
+
+   #comment{
+        height:100%;
+        font-size:16px;
+   }
+
+   img{
+        margin-right:5px;
+        width:30px;
+        height:30px;
+   }
+
+   .post,.reply{
+        padding-left:5px;
+        padding-right:5px;
+   }
+
+   #context{
+        margin-left:30px;
+        width:80%;
+   }
+
+   .reply_box{
+        padding:4px;
+   }
+
+   .date{
+        display:block;
+        font-size:12px;
+        margin-top:8px;
+   }
+
+   .username{
+        display:block;
+        margin-right:0px;
+        font-size:14px;
+   }
+
+
+ }

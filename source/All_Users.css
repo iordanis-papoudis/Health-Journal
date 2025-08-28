@@ -1,0 +1,108 @@
+
+*{
+	font: 18px verdana, arial;
+
+}
+
+body{
+	text-align:center;
+	width:100%;
+	background-attachment:fixed;
+	background-image:linear-gradient(to bottom right, #5ECEBA 50%, #3355FF 100%);
+	background-position:center;
+	background-size:cover;
+	color:black;
+}
+
+
+.modal-header, h4, .close {
+    background-color: #5cb85c;
+    color:white !important;
+    text-align: center;
+    font-size: 30px;
+  }
+  .modal-footer {
+    background-color: #f9f9f9;
+  }
+#main{
+  margin: 0 auto;
+  margin-top:50px;
+  text-align:center;
+  width: 60%;
+  padding: 50px;
+  border-radius: 20px;
+  background-color:rgb(191, 251, 219,0.7);
+  }
+
+#users {
+font-family: Arial, Helvetica, sans-serif;
+border-collapse: collapse;
+}
+
+#users td, #users th {
+border: 1px solid #ddd;
+padding: 8px;
+}
+a, a:hover{
+  color: #04AA6D ;
+}
+
+#users th {
+padding-top: 12px;
+padding-bottom: 12px;
+text-align: left;
+background-color: #04AA6D;
+color: white;
+}
+
+    .card .btn{
+	background-color: #69C897 ;
+	color:white;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size:18px;
+}
+    .btn:hover , button.btn:focus{
+	background-color: #69C897;
+	font-display: block;
+	color:black;
+	outline: none;
+	border-radius: 3px;
+    text-underline-offset: none;
+
+}
+
+.card p{
+    text-align:left;
+    font-family:monospace, arial;
+    font-size:16px;
+}
+
+@media screen and (max-width: 1000px) {
+	h1{
+	font-size:28px;
+  }
+  
+  h2{
+	  font-size:18px;
+  }
+	
+
+#main{
+	width:100%;
+	padding:0px;
+	padding-top:10px;
+}
+
+.container{
+    padding:1px;
+}
+
+.btn{
+    font-size:14px;
+}
+}

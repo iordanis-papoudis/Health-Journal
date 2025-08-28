@@ -1,0 +1,131 @@
+
+*{
+	font: 18px verdana, arial;
+
+}
+
+body{
+	display:box;
+	box-pack:center;
+	text-align:center;
+	width:100%;
+	background-attachment:fixed;
+	background-image:url(images/wallpaperflare.com_book1.jpg);
+	background-position:center;
+	background-size:cover;
+	color:black;
+}
+
+#main{
+	margin: auto;
+	margin-top:50px;
+	width:95%;
+	background: rgba(204, 250, 205,.8);
+	border-radius:10px;
+	margin-top:50px;
+}
+
+p{
+	max-width:95%;
+	margin:auto;
+}
+
+.disease{
+	display:block;
+	width:100%;
+	height:35vh;
+	border-radius:10px;
+	margin-top:18vh;
+	box-shadow: rgb(50,50,50) 25px 15px 40px;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.overlay{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #37B482;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .6s ease;
+  border-radius: 0 0 10px 10px;
+}
+
+.wrapper:hover .overlay {
+  height: 55%;
+  background-color:rgb(54, 176, 127,0.7);
+}
+
+.text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color:white;
+}
+
+@media screen and (max-width: 500px) {
+	h1{
+	font-size:28px;
+  }
+  
+  .navbar-custom{
+	opacity:0.9;
+	top:-75px;
+}
+
+.stick {
+  top: 0px;
+}
+  
+#search{
+	position:relative;
+	min-width:280px;
+	top:75px;
+}
+
+  p{
+	  font-size:16px;
+	  margin-left:0;
+	  margin-right:0;
+	  width:100%;
+  }
+
+#main{
+	width:100%;
+}
+
+.overlay{
+	height:25%;
+	overflow:visible;
+}
+	.disease{
+		min-height:60vh;
+	}
+	
+}
+
+@media (min-width: 768px) and (max-width: 1000px) {
+    .nav.navbar-nav a{
+	   font-size:14px;
+	   padding-left:15px;
+	   padding-right:15px;
+   }
+	
+	
+	.overlay{
+	height:30%;
+	overflow:visible;
+	}
+	
+	
+}
